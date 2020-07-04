@@ -1,6 +1,5 @@
 - hosts: local
   connection: local
-  become: yes
 
   roles:
     - role: "nickjj.docker"

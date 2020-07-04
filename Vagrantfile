@@ -14,8 +14,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible_local" do |ansible|
     ansible.limit = 'all'
     ansible.inventory_path = 'hosts'
-    ansible.playbook = "docker.yml"
-     ansible.galaxy_command = "ansible-galaxy install nickjj.docker"
+    ansible.galaxy_role_file = "requirements.yml"
+    ansible.playbook = 'docker.yml'
   end
 
 
