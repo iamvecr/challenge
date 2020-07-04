@@ -1,1 +1,2 @@
-- src: ericsysmin.docker
+- src: https://github.com/ericsysmin/ansible-collection-docker/archive/0.1.1.tar.gz
+  name: ericsysmin.docker
